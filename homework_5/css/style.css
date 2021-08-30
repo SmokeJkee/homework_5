@@ -26,8 +26,5 @@
     width: 70px;
     height: 70px;
     background-color: red;
-    animation-name: figure;
-    animation-duration: 12s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation: figure 12s infinite linear;
 }
