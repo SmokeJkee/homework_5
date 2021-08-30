@@ -1,0 +1,33 @@
+* {
+    marin: 0;
+    box-sizing: border-box;
+}
+
+@keyframes figure {
+    0%   {background-color:orange; left:0px; top:0px;}
+    25%  {background-color:grey; left:426px; top:0px; border-radius: 50%; transform: rotate(0deg);}
+    50%  {background-color:blue; left:426px; top:426px; border-radius: 0%; transform: rotate(45deg);}
+    75%  {background-color:green; left:0px; top:426px; border-radius: 50%; transform: rotate(-45deg);}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+
+
+.wrapper {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+}
+
+.animation {
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    animation-name: figure;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
